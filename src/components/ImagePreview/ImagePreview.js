@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import styles from "./ImagePreview.module.css";
 
 const ImagePreview = ({ selectedImg }) => {
