@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Fragment, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { imagesActions } from "../../features/Images/ImagesSlice";
 import styles from "./ImagesList.module.css";
@@ -22,7 +22,7 @@ const ImagesList = ({ showImg, deleteImg }) => {
   }, [dispatch, images]);
 
   return (
-    <div>
+    <Fragment>
       {images.length > 0 && (
         <ul className={styles.list}>
           {images.map((element, index) => (
@@ -45,7 +45,7 @@ const ImagesList = ({ showImg, deleteImg }) => {
           ))}
         </ul>
       )}
-    </div>
+    </Fragment>
   );
 };
 
