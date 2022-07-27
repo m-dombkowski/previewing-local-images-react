@@ -10,18 +10,16 @@ export const imagesSlice = createSlice({
 
   reducers: {
     addImg: (state, action) => {
-      const newImg = action.payload;
-      state.images.push(newImg);
+      state.images.push(action.payload);
     },
 
     deleteImg: (state, action) => {
       const imgToDelete = action.payload;
-      console.log(imgToDelete);
-      const newArr = state.images.filter(
+      const filteredImages = state.images.filter(
         (element) => element !== imgToDelete[0]
       );
 
-      state.images = newArr;
+      state.images = filteredImages;
     },
   },
 });

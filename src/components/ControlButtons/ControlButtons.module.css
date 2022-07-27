@@ -1,0 +1,53 @@
+.filesButton:hover,
+.uploadButton:hover {
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+
+.filesButton {
+  font-size: 0.8rem;
+  background: none;
+  border: 1px solid #d9dade;
+  border-radius: 10px;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.3s;
+  box-shadow: -3px 3px 8px -3px #42445a;
+}
+
+.uploadButton {
+  background: none;
+  border: 1px solid #d9dade;
+  border-radius: 10px;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.3s;
+  box-shadow: 3px 3px 8px -3px #42445a;
+}
+
+.uploadButton:disabled {
+  cursor: no-drop;
+  background-color: inherit;
+}
+
+.files {
+  visibility: hidden;
+  position: absolute;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 70px;
+  border-top: 1px solid #d9dade;
+  transition: all 0.3s;
+}
+
+@media (max-width: 360px) {
+  .buttonsContainer {
+    justify-content: center;
+  }
+}

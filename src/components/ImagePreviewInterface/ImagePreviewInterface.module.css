@@ -1,0 +1,75 @@
+.container {
+  height: 100vh;
+}
+
+.interfaceContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  margin: 5% 20% 0 20%;
+  border: 1px solid #d9dade;
+  border-radius: 5px;
+  box-shadow: 6px 6px 15px -10px #42445a;
+}
+
+.listAndButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d9dade;
+  width: 300px;
+  height: 400px;
+  border-radius: 8px;
+}
+
+.errorMessageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorMessage {
+  margin-top: 3rem;
+  background-color: #ff0000;
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 1650px) {
+  .interfaceContainer {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .interfaceContainer {
+    margin: 5% 10% 0 10%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .interfaceContainer {
+    margin: 5% 5% 0 5%;
+  }
+}
+
+@media (max-width: 850px) {
+  .interfaceContainer {
+    display: grid;
+    justify-items: center;
+    margin: 5% 15% 0 15%;
+  }
+}
+
+@media (max-width: 600px) {
+  .interfaceContainer {
+    margin: 5% 5% 0 5%;
+  }
+}
+
+@media (max-width: 360px) {
+  .interfaceContainer {
+    margin: 5% 0 0 0;
+  }
+}

@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import AddFiles from "./components/AddFile/AddFile";
+import ImgPreviewInterface from "./components/ImagePreviewInterface/ImagePreviewInterface";
 
 const App = () => {
   return (
     <div className="App">
-      <AddFiles />
+      <ImgPreviewInterface />
     </div>
   );
 };

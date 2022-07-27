@@ -1,0 +1,56 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.singleImage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #d9dade;
+}
+
+.singleImage:nth-child(5) {
+  border-bottom: 1px solid transparent;
+}
+
+.previewImgButton:hover,
+.deleteImgButton:hover {
+  cursor: pointer;
+}
+.previewImgButton:hover {
+  border: 1px solid transparent;
+  background-color: #f7f8f8;
+}
+
+.deleteImgButton:hover {
+  background-color: #ff0000;
+}
+
+.previewImgButton {
+  background: none;
+  border: 1px solid #d9dade;
+  border-radius: 10px;
+  padding: 0.4rem 1.2rem;
+  transition: all 0.3s;
+  box-shadow: -3px 3px 8px -3px #42445a;
+}
+
+.deleteImgButton {
+  background: none;
+  border-radius: 50%;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #c3c4c8;
+  box-shadow: 3px 3px 8px -3px #42445a;
+  transition: all 0.3s;
+}
+
+@media (max-width: 360px) {
+  .singleImage {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+}
