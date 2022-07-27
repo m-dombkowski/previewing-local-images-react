@@ -21,6 +21,11 @@ export const imagesSlice = createSlice({
 
       state.images = filteredImages;
     },
+
+    updateArrayIfMoreThan5: (state, action) => {
+      const newArr = action.payload;
+      state.images = newArr;
+    },
   },
 });
 

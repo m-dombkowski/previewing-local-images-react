@@ -28,13 +28,6 @@ const ImgPreviewInterface = () => {
         throw new Error("This image is already on your list.");
       }
 
-      if (images.length === 5) {
-        setSelectedImg(null);
-        throw new Error(
-          "Can't add more than 5 images, please delete one of them before trying again."
-        );
-      }
-
       dispatch(imagesActions.addImg(selectedImg));
       setSelectedImg(null);
     } catch (err) {

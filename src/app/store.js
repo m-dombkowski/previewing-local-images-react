@@ -7,6 +7,7 @@ export const store = configureStore({
     images: imagesSlice.reducer,
     errors: errorSlice.reducer,
   },
+  // added this to not have spam of errors in the console even though everything works as intended
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({ serializableCheck: false }),
 });
